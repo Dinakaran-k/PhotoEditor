@@ -11,9 +11,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = primary,
+    secondary = secondary,
+    tertiary = black
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -35,7 +35,6 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun InteractivePhotoCanvasTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
